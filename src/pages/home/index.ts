@@ -1,4 +1,13 @@
 import dayjs from 'dayjs';
+
+export const LIGHT_CHART_COLORS = {
+  textColor: 'rgba(0, 0, 0, 0.9)',
+  placeholderColor: 'rgba(0, 0, 0, 0.35)',
+  borderColor: '#dcdcdc',
+  containerColor: '#fff',
+};
+
+export type TChartColor = typeof LIGHT_CHART_COLORS;
 /**
  * 获取随机数
  *

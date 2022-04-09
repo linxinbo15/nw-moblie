@@ -3,11 +3,11 @@ import qs from 'qs';
 import { useUserStore } from '@/store/modules/user';
 import { Toast } from 'tdesign-mobile-vue';
 import router from '@/router';
-import { ContentTypeEnum } from './httpEnum';
+import { ContentTypeEnum, UrlEnum } from './httpEnum';
 
 // create an axios instance
 const service = axios.create({
-  baseURL: import.meta.env.VITE_API_URL as string, // url = base api url + request url
+  baseURL: UrlEnum.API as string, // url = base api url + request url
   withCredentials: true, // send cookies when cross-domain requests
   timeout: 15000, // request timeout
 });
