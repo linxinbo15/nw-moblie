@@ -70,7 +70,7 @@
           <div class="investm-full flex-start">
             <t-image class="investm-icon" :src="gd" fit="fill"></t-image>
             <div class="investm-full-t">
-              <div class="new-title flex-start">创金投研部大类资产配置观点 <t-image class="new-icon" :src="newicon" fit="fill"></t-image></div>
+              <div class="new-title flex-start">投研部大类资产配置观点 <t-image class="new-icon" :src="newicon" fit="fill"></t-image></div>
               <div class="new-date">2022–04-07</div>
             </div>
           </div>

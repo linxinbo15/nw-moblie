@@ -30,7 +30,7 @@ export default ({ mode }: ConfigEnv): UserConfig => {
       proxy: {
         '/api': {
           // 后台接口REST API
-          target: 'http://hjz-h5.d.5irich.com/wirich-research-h5/',
+          target: 'http://0.0.0.0:3000/',
           changeOrigin: true,
           rewrite: (path) => path.replace(/^\/api/, ''),
         },
