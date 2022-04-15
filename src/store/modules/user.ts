@@ -3,6 +3,7 @@ import { Storage } from '@/utils/Storage';
 import { ResultEnum } from '@/utils/httpEnum';
 import { encryptionKey } from '@/api/demo';
 
+
 interface UserState {
   token: string;
   name: string;
@@ -62,7 +63,8 @@ export const useUserStore = defineStore({
           this.setToken(result.token);
           this.setEncryptKey(result.encryptKey);
           this.setDecryptKey(result.decryptKey);
-          // return this.afterLogin();
+          // 返回成功
+          // return Promise.resolve(result);
         }
       } catch (error) {
         return Promise.reject(error);

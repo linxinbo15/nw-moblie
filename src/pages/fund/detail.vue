@@ -10,7 +10,7 @@
     </div>    
     <div class="grid-demo">
       <div class="t-grid">
-        <div class="t-grid-item" v-for="item in menuList" :key="item.title" @click="goLink(item.link)">
+        <div class="t-grid-item" v-for="item in menuList" :key="item.title">
           <div class="t-grid-item__image-box">
             <t-image class="image-container" :src="item.url" fit="fill"></t-image>
           </div>
@@ -151,12 +151,11 @@
   import { getLineChartDataSet } from './index';
   import { UrlEnum } from '@/utils/httpEnum';
   import { ChevronRightIcon } from 'tdesign-icons-vue-next';
-  import { useRouter, useRoute } from 'vue-router';
 
   echarts.use([TooltipComponent, LegendComponent, PieChart, GridComponent, LineChart, BarChart, CanvasRenderer]);
 
   export default defineComponent({
-    name: 'Home',
+    name: 'FundDetail',
     components: { ChevronRightIcon },
     setup() {
       const images = [
@@ -179,11 +178,6 @@
       const hot2 = ref(UrlEnum.PICURL + 'hotimg1.png');
       const hot3 = ref(UrlEnum.PICURL + 'hotimg2.png');
       const tzgdIcon1 = ref(UrlEnum.PICURL + 'tzgd-icon1.png');
-      const router = useRouter();
-
-      const goLink = (url: string) => {
-        router.push(url);
-      };
 
       const onChangeSearch = (val: string) => {
         console.log('change: ', val);
@@ -260,7 +254,6 @@
         hot1,
         hot2,
         hot3,
-        goLink,
       };
     },
   });

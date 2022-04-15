@@ -6,7 +6,7 @@
         <t-tab-bar-item v-for="(item, i) in main" :key="item.path || i" :icon="item.meta?.icon" :name="item.name">
         {{ item.meta?.title }}
         </t-tab-bar-item>
-    </t-tab-bar>  
+    </t-tab-bar>
 </template>
 <script lang="ts">
 import { defineComponent, ref, watch, h, nextTick } from 'vue';

@@ -1,0 +1,77 @@
+@import './variables.less';
+@import './font-family.less';
+@import './theme/index.less'; // 默认颜色主题light.less
+body {
+    color: @text-color-secondary;
+    font-family: -apple-system, BlinkMacSystemFont, @font-family;
+    font-size: @font-size-base;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    padding: 0;
+    margin: 0;
+    background-color: @bg-color;
+  }
+  
+  pre {
+    font-family: @font-family;
+  }
+  
+  ul,
+  dl,
+  li,
+  dd,
+  dt {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  figure,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .flex-center + .flex-center {
+    margin-left:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flex1 {
+    flex:1;
+  }
+
+  .flex-start {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .flex-warp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }

@@ -22,8 +22,5 @@
   });
 </script>
 <style lang="less">
-body {
-  margin: 0px;
-  background-color: #f4f5f6;
-}
+@import '@/style/variables.less';
 </style>
