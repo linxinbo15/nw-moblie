@@ -2,7 +2,7 @@
  * @description: 请求方法
  */
 export enum UrlEnum {
-  PICURL = 'https://mini.5irich.com/app/',
+  PICURL = '',
   API = 'api/',
 }
 
